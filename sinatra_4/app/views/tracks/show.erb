@@ -1,0 +1,21 @@
+
+<h1>Songs by <%= @song.artist %></h1>
+<hr/>
+<p><%= @song.title  %> <a href="<%= @song.url  %>"><%= @song.url  %></a></p>
+<p><small>posted at <%= @song.created_at  %></small></p>
+<hr/>
+</hr>
+<h1>Other songs from this artist:</h1>
+<% @songs.each do |song| %>
+  <div class="song">
+    <h3><a href="/songs/<%= song.id %>"><%= song.title %></a></h3>
+    <p>
+      <em>by <%= song.artist %></em> <a href="<%= song.url %>"><%= song.url %></a>
+    </p>
+  </div>
+<% end %>
+<hr/>
+
+<a href="/songs">Back to All Songs</a>
+
+

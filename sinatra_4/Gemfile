@@ -1,0 +1,22 @@
+# A sample Gemfile
+source "https://rubygems.org"
+
+gem 'rake'
+gem 'activesupport'
+
+gem 'sinatra'
+gem 'sinatra-contrib'
+gem 'sinatra-activerecord'
+gem 'sinatra-authorization'
+
+gem 'puma'
+gem 'tux'
+gem 'bcrypt'
+gem 'rack-test'
+gem 'rack-flash'
+
+group :development, :test do
+  gem 'pry'
+  gem 'shotgun'
+  gem 'sqlite3'
+end

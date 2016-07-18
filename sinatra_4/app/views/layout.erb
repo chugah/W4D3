@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+	See: http://necolas.github.com/normalize.css/
+-->
+   <link rel="stylesheet" href="/stylesheets/normalize.css">
+	<!--application.css is where you put your styles-->
+	<link rel="stylesheet" href="/stylesheets/application.css">
+	
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="/javascript/application.js"></script>
+
+	<title></title>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">SINATRA music</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/music">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="/logout">Logout</a></li>
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+	</nav>	
+	<div class="body-container">
+  <%= yield %>
+   </div> 
+   <footer class="text-center">
+      <div class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="footer-col col-md-4">
+                      <h5>Headquarters</h5>
+                      <p><small>Lighthouse Labs<br>Toronto, ON, Canada</small></p>
+                  </div>
+                  <div class="footer-col col-md-4">
+                      <h5>SINATRA worldwide</h5>
+                      <ul class="list-inline">
+                          <li>
+                              <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                          </li>
+                          <li>
+                              <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                          </li>
+                          <li>
+                              <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                          </li>
+                          <li>
+                              <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                          </li>
+                          <li>
+                              <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="footer-col col-md-4">
+                      <h5>SINATRA</h5>
+                      <p><em><small>Connecting people with their favorite music.</small></em></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-below">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <p>&copy; 2016</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <nav class="navbar navbar-inverse">
+      </div>
+  </footer>
+</body>
+</html>
